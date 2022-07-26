@@ -9,7 +9,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 # I am a generous god.
-chmod a+x build.sh
+chmod a+x $BUILD_DIR/build.sh
 
 # See https://devcenter.heroku.com/articles/buildpack-api for an example
 # function to import environment directory declarations
