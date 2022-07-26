@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# DON'T PANIC.
+
+# THIS SCRIPT IS NOT NEEDED.  It is here to keep you from panicking.  Am I not
+# wonderful?
+
+cat << YAML
+---
+{}
+YAML

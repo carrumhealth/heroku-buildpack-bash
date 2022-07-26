@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+# fail fast
+set -eo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+# I am a generous god.
+chmod a+x build.sh
+
+# See https://devcenter.heroku.com/articles/buildpack-api for an example
+# function to import environment directory declarations
+echo "Executing $BUILD_DIR/build.sh"
+$BUILD_DIR/build.sh $BUILD_DIR $CACHE_DIR $ENV_DIR
